@@ -6,3 +6,70 @@
     DESCRIPTION: Static portoflio website, showcasing several projects, my experience, and relevant skills
     ~~~
 */
+* {
+  margin: 0;
+  color: white;
+}
+
+:root {
+  --x: 0vw;
+  --y: 0vh;
+  font-family: Inter, system-ui;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+
+  background: rgb(0, 22, 16);
+
+  display: flex;
+  align-items: stretch;   
+  justify-content: center;    
+}
+
+body::before {
+  inset: 0;
+  
+  background:
+    radial-gradient(
+      circle 100em at var(--x, 50vw) var(--y, 50vh),
+      rgba(255,255,255,0.05),
+      rgba(255,255,255,0)
+    );
+
+  content: "";
+  position: fixed;
+  pointer-events: none;
+}
+
+main {
+  width: 70%;
+  min-height: 100%;     
+
+  display: flex;
+}
+
+a {
+  font-size: 10em;
+  font-weight: bold;
+}
+
+#portfolio-profile {
+  width: 40%;
+  height: 100vh;      
+  top: 0;  
+  
+  align-self: flex-start;
+  position: sticky;
+}
+
+#portfolio-information {
+  width: 60%;
+  height: 300vh;          
+}
