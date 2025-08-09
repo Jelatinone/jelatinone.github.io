@@ -8,7 +8,7 @@
 */
 * {
   margin: 0;
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.625; 
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 main {
-  width: 70%;
+  width: 60%;
   min-height: 100%;     
 
   display: flex;
@@ -68,6 +68,18 @@ main {
 a {
   font-weight: bold;
   text-decoration: none;
+}
+
+a:hover {
+  color:rgb(212, 211, 223)
+}
+
+b {
+  color: white;
+}
+
+p {
+  font-size: 0.95em;
 }
 
 svg {
@@ -97,9 +109,10 @@ svg {
 }
 
 #profile-name {
-  font-size: 3.5em;
+  font-size: 2.5em;
 
   font-weight: bolder;
+  color: white;
 }
 
 #profile-title {
@@ -116,20 +129,16 @@ svg {
   animation: blink-caret 0.75s step-end infinite;
 }
 
-#profile-detail {
-  color: rgba(255, 255, 255, 0.65);
-}
 
 #profile-selector {
   list-style: none;
   padding: 0;
   width: 200px;
-  height: 40%;
+  height: 60%;
 }
 
 #profile-selector li a {
   font-size: smaller;
-  color: rgba(255, 255, 255, 0.65);
 }
 
 #profile-selector li {
@@ -147,7 +156,7 @@ svg {
 #profile-selector li::before {
   left: 0;
   top: 20%;
-  height: 60%; 
+  height: 40%; 
   width: 0;
 
   content: "";
@@ -174,6 +183,109 @@ svg {
 }
 
 #portfolio-information {
-  width: 60%;
-  height: 300vh;          
+  width: 60%;   
+  top: 0;  
+  
+  align-self: flex-start;
+  position: sticky;
+
+  justify-content: center;
 }
+
+#portfolio-information > section > p {
+  margin: 1em;
+}
+
+#portfolio-information > * {
+  width: 100%;
+  margin-top: 5em;
+
+  display: block;
+}
+
+#information-about {
+  text-align: justify;
+}
+
+#information-experience {
+  margin-top: 0;
+}
+
+.experience-tile {
+  width: 100% auto;
+  min-height: 150px;
+  padding: 1.5rem;      
+  margin: 1rem auto;    
+  border-radius: 0.45em;
+  display: grid;
+  grid-template-areas: 
+    "Period Title"
+    "Period Description"
+    "Period Skills";
+  grid-template-columns: 30% 70%;
+  transition:
+    background-color 0.3s ease,
+    backdrop-filter 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#experience-resume {
+  margin: 1em;
+  font-size: 0.95em;
+}
+
+.experience-tile * {
+  margin: 1em;
+}
+
+.experience-tile:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.tile-period {
+  font-weight: bold;
+  grid-area: Period;
+  font-size: 0.65em;
+}
+
+.tile-title {
+  font-size: 0.80em;
+
+  color: rgb(255, 255, 255);
+  
+  grid-area: Title;
+}
+
+.tile-description {
+  font-size: 0.65em;
+
+  text-align: justify;
+  grid-area: Description;
+}
+
+.tile--skills {
+  gap: 0.5em;       
+  margin-left: 0.5em;    
+
+  flex-wrap: wrap;  
+  grid-area: Skills;
+  display: flex;     
+}
+
+.skills-title {
+  margin: 0.1em;
+  border-radius: 1em;
+  font-size: 0.65em;
+  padding: 0.15em 1em 0.15em 1em;
+
+  width: fit-content;
+
+  color: rgb(248, 255, 223);
+  background: rgba(255, 255, 0, 0.085);
+}
+
