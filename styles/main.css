@@ -247,13 +247,13 @@ svg {
   color: white;
 }
 
-.tile-period {
+.experience-period {
   font-weight: bold;
   grid-area: Period;
   font-size: 0.65em;
 }
 
-.tile-title {
+.experience-title {
   font-size: 0.80em;
 
   color: rgb(255, 255, 255);
@@ -261,14 +261,14 @@ svg {
   grid-area: Title;
 }
 
-.tile-description {
+.experience-description {
   font-size: 0.65em;
 
   text-align: justify;
   grid-area: Description;
 }
 
-.tile--skills {
+.experience-skills {
   gap: 0.5em;       
   margin-left: 0.5em;    
 
@@ -288,4 +288,63 @@ svg {
   color: rgb(248, 255, 223);
   background: rgba(255, 255, 0, 0.085);
 }
+
+
+.project-tile {
+  width: 100% auto;
+  min-height: 150px;
+  padding: 1.5rem;      
+  margin: 1rem auto;    
+  border-radius: 0.45em;
+  display: grid;
+  grid-template-areas: 
+    "Period Title"
+    "Period Description";
+  grid-template-columns: 30% 70%;
+  transition:
+    background-color 0.3s ease,
+    backdrop-filter 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#project-more {
+  margin: 1em;
+  font-size: 0.95em;
+}
+
+.project-tile * {
+  margin: 1em;
+}
+
+.project-tile:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.project-period {
+  font-weight: bold;
+  grid-area: Period;
+  font-size: 0.65em;
+}
+
+.project-title {
+  font-size: 0.80em;
+
+  color: rgb(255, 255, 255);
+  
+  grid-area: Title;
+}
+
+.project-description {
+  font-size: 0.65em;
+
+  text-align: justify;
+  grid-area: Description;
+}
+
+
 
