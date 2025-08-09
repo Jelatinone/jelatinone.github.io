@@ -12,14 +12,25 @@ document.addEventListener('mousemove', e => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const titleElement = document.getElementById('portfolio-title');
+  const titleElement = document.getElementById('profile-title');
   const titlePhrases = [
-    "Software Developer",
-    "Controls Engineer",
-    "Robotics Engineer",
-    "Creative Problem Solver",
-    "Author",
-    "Hobbyist Photographer"
+    "Computer Engineering Student.",
+    "Mastering Software Developement.",
+    "Empowering others through innovation.",
+    "Robotics Systems Programmer.",
+    "Aspiring Guitarist",
+    "Hobbyist Photographer.",
+    "CAD Enthusiast.",
+    "Creative Problem Solver.",
+    "Hands-On Prototyper.",
+    "Lifelong Learner in Technology.",
+    "Control Systems Enthusiast.",
+    "From Concept to Code.",
+    "Passionate About Automation.",
+    "Engineering Solutions.",
+    "Shaping Ideas Into Reality.",
+    "Tinkerer and Maker.",
+    "Translating Concepts Into Machines.",
   ];
 
   const typeStates = {
@@ -28,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     PAUSE: 2
   };
   const deleteSpeed = 150; 
-  const typeSpeed = 200;    
+  const typeSpeed = 100;    
   const pauseSpeed = 1500;  
 
   let titlePhraseIndex = 0;
