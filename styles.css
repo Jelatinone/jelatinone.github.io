@@ -24,6 +24,8 @@
 
   font-family: Inter, system-ui;
   font-feature-settings: 'liga' 1, 'calt' 1;
+
+  background-color: var(--background-color);
 }
 
 @supports (font-variation-settings: normal) {
