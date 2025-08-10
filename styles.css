@@ -140,8 +140,6 @@ p::selection, h1::selection {
 #portfolio-profile {
   top: 0;
 
-  height: 100%;
-
   position: sticky;
   align-self: start;
   justify-content: left;
@@ -242,7 +240,7 @@ p::selection, h1::selection {
 }
 
 .portfolio-content {
-  padding: 0 1em 0 1em;
+  padding: 0 1em 1em 1em;
 }
 
 #portfolio-about {
@@ -254,7 +252,7 @@ p::selection, h1::selection {
 .portfolio-tile {
   width: 100% auto;
   min-height: 150px;
-  padding: 1rem;      
+  padding: 1em;      
   margin: 0 auto 1rem;
   border-radius: 0.45em;
   display: grid;
@@ -269,11 +267,20 @@ p::selection, h1::selection {
     box-shadow 0.3s ease;
 }
 
-.experience-title {
+.experience-tile {
   grid-template-areas: 
     "period title"
     "period description"
     "period skills";
+}
+
+#experience-resume, #project-more {
+  color: var(--text-color);
+  font-size: 0.7em;
+}
+
+#experience-resume:hover, #project-more:hover {
+  color: white;
 }
 
 .project-tile {
@@ -295,6 +302,8 @@ p::selection, h1::selection {
   font-weight: bold;
 
   text-align: left;
+
+  margin-top: 1.5em;
 
   grid-area: period;
   font-size: 0.65em;
@@ -341,6 +350,11 @@ p::selection, h1::selection {
 .tile-image {
   grid-area: image;
 
+  width: 105px;
+  height: 65px;
+
+  margin: 1em 0 1em 0;
+
   border-radius: 0.45em;
   border: var(--text-color) 1px;
 }
@@ -351,6 +365,8 @@ p::selection, h1::selection {
 
 #portfolio-projects {
   grid-area: projects;
+
+  padding-bottom: 1em;
 }
 
 #portfolio-interests {
@@ -392,7 +408,7 @@ p::selection, h1::selection {
     margin-top: 0.5em;
   }
 
-  .experience-title {
+  .experience-tile {
     grid-template-areas: 
       "period"
       "title"
@@ -406,6 +422,7 @@ p::selection, h1::selection {
       "period"
       "title"
       "description"
-      "skills";
+      "image";
+    grid-template-columns: 100%;
   }
 }
