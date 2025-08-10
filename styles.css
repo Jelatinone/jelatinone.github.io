@@ -68,22 +68,20 @@ a {
 
 html {
   scroll-behavior: smooth;
-
   background-color: var(--backdrop-color);
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   margin: 0;
+  background-color: transparent;
 }
 
 main {
-  height: fit-content;
-  width: 100%; 
-
+  width: 100%;
+  min-height: 100vh;
   background-color: var(--background-color);
-
   display: flex;
   justify-content: center;
 }
@@ -402,7 +400,6 @@ p::selection, h1::selection, a::selection, b::selection {
 
   .portfolio-section--header {
     top: 0;
-
     display: block;
     position: sticky;
   }
@@ -425,7 +422,7 @@ p::selection, h1::selection, a::selection, b::selection {
   }
 
   .project-tile {
-      grid-template-areas: 
+    grid-template-areas: 
       "period"
       "title"
       "description"
