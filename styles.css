@@ -115,7 +115,7 @@ p::selection, h1::selection, a::selection, b::selection {
 }
 
 #portfolio-container {
-  min-height: 100vh; /* TODO: REMOVE */
+  min-height: 100vh; 
   width: 60%;
 
   display: grid;
