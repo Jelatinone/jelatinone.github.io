@@ -1,37 +1,37 @@
 /*
-    ~~~
-    AUTHOR: CODY WASHINGTON
-    CREATED: 8.8.2025
-    TITLE: A Portfolio: Cody Washington
-    DESCRIPTION: Static portoflio website, showcasing several projects, my experience, and relevant skills
-    ~~~
+  ~~~
+  AUTHOR: CODY WASHINGTON
+  CREATED: 8.8.2025
+  TITLE: A Portfolio: Cody Washington
+  DESCRIPTION: Static portoflio website, showcasing several projects, my experience, and relevant skills
+  ~~~
 */
-document.addEventListener('mousemove', e => {
-  document.documentElement.style.setProperty('--x', `${e.clientX}px`);
-  document.documentElement.style.setProperty('--y', `${e.clientY}px`);
+document.addEventListener('mousemove', event => {
+  document.documentElement.style.setProperty('--x', `${event.clientX}px`);
+  document.documentElement.style.setProperty('--y', `${event.clientY}px`);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const titleElement = document.getElementById('profile-title');
+  const titleElement = document.getElementById('profile-title--tagline');
   const titlePhrases = [
-    "Computer Engineering Student*",
-    "Mastering Software Developement*",
-    "Empowering others through innovation*",
-    "Robotics Systems Programmer*",
-    "Aspiring Guitarist*",
-    "Hobbyist Photographer*",
-    "CAD Enthusiast*",
-    "Creative Problem Solver*",
-    "Hands-On Prototyper*",
-    "Lifelong Learner in Technology*",
-    "Control Systems Enthusiast.",
-    "From Concept to Code*",
-    "Passionate About Automation*",
-    "Velocity: Comfort: Design*",
-    "Engineering Solutions*",
-    "Shaping Ideas Into Reality*",
-    "Tinkerer and Maker*",
-    "Translating Concepts Into Machines*",
+    "Computer Engineering Student.",
+    "Mastering Software Development.",
+    "Empowering Through Innovation.",
+    "Robotics Programmer.",
+    "Aspiring Guitarist.",
+    "Hobbyist Photographer.",
+    "CAD Enthusiast.",
+    "Creative Problem Solver.",
+    "Hands-On Prototyper.",
+    "Lifelong Tech Learner.",
+    "Control Systems Fan.",
+    "From Concept to Code.",
+    "Passionate About Automation.",
+    "Velocity: Comfort: Design.",
+    "Engineering Solutions.",
+    "Shaping Ideas Into Reality.",
+    "Tinkerer & Maker.",
+    "Turning Concepts into Machines.",
   ];
 
   const typeStates = {
