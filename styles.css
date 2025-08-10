@@ -95,7 +95,7 @@ h1 {
   color: var(--focus-color);
 }
 
-p::selection, h1::selection {
+p::selection, h1::selection, a::selection, b::selection {
   background-color: var(--select-color);
   color: var(--background-color)
 }
@@ -130,6 +130,8 @@ p::selection, h1::selection {
 .portfolio-section--header {
   background: rgba(var(--background-color), 0.3);
   backdrop-filter: blur(10px);
+
+  z-index: 9998;
 
   font-size: 1em;
   padding: 0 1em 0 1em;
