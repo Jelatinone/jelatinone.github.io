@@ -13,6 +13,7 @@
   --y: 0vh;
 
   --background-color: rgb(15 23 42);
+  --backdrop-color: rgb(6, 14, 34);
   --text-color: rgba(255, 255, 255, 0.65);
   --focus-color: rgba(255, 255, 249, 0.95);
   --select-color: rgb(212, 211, 223);
@@ -25,7 +26,7 @@
   font-family: Inter, system-ui;
   font-feature-settings: 'liga' 1, 'calt' 1;
 
-  background: rgba(rgb(9, 15, 30),1);
+  background: rgba(rgb(6, 14, 34),1);
 }
 
 @supports (font-variation-settings: normal) {
@@ -68,7 +69,7 @@ a {
 html {
   scroll-behavior: smooth;
 
-  background-color: var(--background-color);
+  background-color: var(--backdrop-color);
 }
 
 body {
