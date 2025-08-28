@@ -1,0 +1,12 @@
+{{#each experiences}}
+<a href="{{link}}" class="portfolio-tile experience-tile">
+    <p class="tile-period">{{period}}</p>
+    <p class="tile-title">{{title}}</p>
+    <p class="tile-description">{{description}}</p>
+    <div class="tile-skills">
+        {{#each skills}}
+        <div class="skills-title">{{this}}</div>
+        {{/each}}
+    </div>
+  </a>
+{{/each}}

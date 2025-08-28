@@ -80,60 +80,26 @@
                 </section>
                 <section id="portfolio-about">
                     <h1 class="portfolio-section--header">ABOUT</h1>
-                    <div class="portfolio-content">
-                        <p>I’m a <a target="_blank" href="https://ece.utdallas.edu/"><b>computer engineering</b></a> student at <a target="_blank" href="https://www.utdallas.edu/"><b>The University of Texas at Dallas</b></a> and a member of the Hobson Wildenthal Honors College. I'm also an adept software developer driven by the elegance of combining language, mathematics, and technology to build precise, <a target="_blank" href="https://drive.google.com/drive/folders/10PedKTel_veYkmdbocBmqe1NFrXlobb4?usp=sharing"><b>high-impact</b></a> solutions. I thrive at the intersection of engineering and communication, where complex systems meet clear, intentional design — whether that’s through code, CAD models, or storytelling.</p>
-                        <p>Currently, I’m focused on developing scalable Java-based services that harness AI, data processing, and cloud technologies to empower students in discovering scholarships that best fit their unique profiles. My work blends rigorous <a target="_blank" href="https://en.wikipedia.org/wiki/Control_theory"><b>control theory</b></a> principles with modern software engineering to build responsive, efficient, and reliable systems.</p>
-                        <p>My journey spans <a target="_blank" href="https://www.firstinspires.org/robotics/frc"><b>robotics competitions</b></a>, hands-on prototyping, and writing projects, all feeding my passion for solving real-world problems with creativity and technical rigor. Outside the lab and keyboard, I enjoy exploring language beyond the written word, diving into <a target="_blank" href="https://en.wikipedia.org/wiki/Sign_language"><b>sign language</b></a>, and capturing moments through photography.</p>
-                        <p>When I’m not engineering or writing, you might find me tinkering with new ideas, embracing the challenges of complex systems, or just enjoying the quiet satisfaction of a well-crafted solution.</p>
-                    </div>
+                    <!-- Repeatable about paragraph -->
+                    <article class="portfolio-content">
+                      {{about-section-paragraph}}
+                    </article>
                 </section>
                 <section id="portfolio-experience">
                     <h1 class="portfolio-section--header">EXPERIENCE</h1>
                     <article class="portfolio-content">
-                        <div class="portfolio-tile experience-tile">
-                            <p class="tile-period">AUGUST 2025 - PRESENT</p>
-                            <p class="tile-title">Website Developer / Executive Assistant · The Source Of Hope</p>
-                            <p class="tile-description">Currently leading the redesign of the company website to improve usability, accessibility, and user experience through a modern, responsive interface. Develop and maintain site features with WordPress, React.js, and Tailwind CSS while coordinating a two-person development team to deliver timely updates. Manage client communications, scheduling, and executive support to ensure efficient daily operations.</p>
-                            <div class="tile-skills">
-                                <div class="skills-title">Information Technology</div>
-                                <div class="skills-title">Technical Troubleshooting</div>
-                                <div class="skills-title">Web Development</div>
-                                <div class="skills-title">Client Relations</div>
-                            </div>
-                          </div>
-                        <div class="portfolio-tile experience-tile">
-                            <p class="tile-period">MAY 2025 - PRESENT</p>
-                            <p class="tile-title">Associate, Stocking · Walmart</p>
-                            <p class="tile-description">Provided customer service by assisting with purchases, locating products, and answering inquiries; maintained organized shelves, operated registers and self-checkouts accurately, and supported team operations during peak hours.</p>
-                            <div class="tile-skills">
-                                <div class="skills-title">Customer Service</div>
-                                <div class="skills-title">Organization</div>
-                                <div class="skills-title">Teamwork</div>
-                            </div>
-                        </div>
-                        <div class="portfolio-tile experience-tile">
-                            <p class="tile-period">MAY 2023 - MAY 2025</p>
-                            <p class="tile-title">Associate, Fountain Operator · Andy's Frozen Custard</p>
-                            <p class="tile-description">Prepared and served high-quality frozen custard in a fast-paced, customer-focused environment, maintained cleanliness to meet health standards, handled orders and special requests with care, and collaborated with team members to ensure speed, quality, and a positive customer experience.</p>
-                            <div class="tile-skills">
-                                <div class="skills-title">Fast-Paced</div>
-                                <div class="skills-title">Quality Control</div>                            
-                                <div class="skills-title">Task-Management</div>
-                            </div>
-                        </div>
-                        <a href="assets/Resume [8.27.2025].pdf" target="_blank" id="experience-resume">VIEW RESUME</a>
+                      <!-- Repeatable experience tile -->
+                      {{experience-section-tile}}
+                      <a href="assets/Resume [8.27.2025].pdf" target="_blank" id="experience-resume">VIEW RESUME</a>
                     </article>
                 </section>
                 <section id="portfolio-projects">
                     <h1 class="portfolio-section--header">PROJECTS</h1>
                     <article class="portfolio-content">
-                        <a href="https://docs.google.com/document/d/1hqElhx3-ualN6PJi3nIv5-skT4V6qtu4/edit?usp=sharing&ouid=105736942155653670301&rtpof=true&sd=true" class="portfolio-tile project-tile">
-                            <p class="tile-period">AUGUST 2024 - MAY 2025</p>
-                            <p class="tile-title">Co-developer, Main Programmer · Exo-Torque*</p>
-                            <p class="tile-description">Developed a wearable robotic exo-arm designed to reduce musculoskeletal strain for construction workers by supporting upper body movements during repetitive or overhead tasks. The project focused on ergonomic design, user-driven testing, and mechanical assist using lightweight materials and actuator control.</p>
-                            <img src="assets/Project [Exo-Torque].png" class="tile-image"/>
-                        </a>
-                        <a href="https://github.com/Jelatinone" target="_blank" id="project-more">VIEW MORE PROJECTS</a>
+                      <!-- Repeatable project tile -->
+                      {{project-section-tile}}
+
+                      <a href="https://github.com/Jelatinone" target="_blank" id="project-more">VIEW MORE PROJECTS</a>
                     </article>
                 </section>
             </div>
