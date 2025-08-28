@@ -4,7 +4,7 @@
     AUTHOR: CODY WASHINGTON
     CREATED: 8.8.2025
     TITLE: A Portfolio: Cody Washington
-    DESCRIPTION: Static portoflio website, showcasing several projects, my experience, and relevant skills
+    DESCRIPTION: Static portfolio website, showcasing several projects, my experience, and relevant skills
     ~~~
 -->
 <!-- Document -->
@@ -32,7 +32,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     </head>
-    <!-- Page Conent -->
+    <!-- Page Content -->
     <body>
         <!-- JavaScript -->
         <script src="main.js" defer></script>
@@ -82,14 +82,14 @@
                     <h1 class="portfolio-section--header">ABOUT</h1>
                     <!-- Repeatable about paragraph -->
                     <article class="portfolio-content">
-                      {{about-section-paragraph}}
+                      {{> about }}
                     </article>
                 </section>
                 <section id="portfolio-experience">
                     <h1 class="portfolio-section--header">EXPERIENCE</h1>
                     <article class="portfolio-content">
                       <!-- Repeatable experience tile -->
-                      {{experience-section-tile}}
+                      {{> experience }}
                       <a href="assets/Resume [8.27.2025].pdf" target="_blank" id="experience-resume">VIEW RESUME</a>
                     </article>
                 </section>
@@ -97,7 +97,7 @@
                     <h1 class="portfolio-section--header">PROJECTS</h1>
                     <article class="portfolio-content">
                       <!-- Repeatable project tile -->
-                      {{project-section-tile}}
+                      {{> projects }}
 
                       <a href="https://github.com/Jelatinone" target="_blank" id="project-more">VIEW MORE PROJECTS</a>
                     </article>
