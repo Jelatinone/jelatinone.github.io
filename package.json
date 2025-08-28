@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Jelatinone/jelatinone.github.io/issues"
   },
-  "homepage": "https://github.com/Jelatinone/jelatinone.github.io#readme"
+  "homepage": "https://github.com/Jelatinone/jelatinone.github.io#readme",
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
 }

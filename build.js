@@ -9,13 +9,12 @@
 
 const fs = require('fs');
 const path = require('path');
-const fetch = require('node-fetch');
 const handlebars = require('handlebars');
 
 const ENVIRONMENT = process.env.CMS_ENV || 'local';
 const WP_BASE = ENVIRONMENT === 'live'
   ? 'https://codywashington.com/wp-json/wp/v2'
-  : 'http://codywashington.com.local/wp-json/wp/v2';
+  : 'http://codywashingtoncom.local/wp-json/wp/v2';
 
 // Load main template
 const TEMPLATE_CONTENT = fs.readFileSync('index.html', 'utf-8');
