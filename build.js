@@ -21,10 +21,15 @@ const WP_BASE = ENVIRONMENT === 'live'
 const TEMPLATE_CONTENT = fs.readFileSync('index.html', 'utf-8');
 const TEMPLATE = handlebars.compile(TEMPLATE_CONTENT);
 
-fs.readdirSync(partialDir).forEach((file) => {
+const ASSETS_SRC = path.join(__dirname, 'assets');
+const ASSETS_DEST = path.join(__dirname, 'dist', 'assets');
+
+const PARTIAL_DIR = path.join(__dirname, 'templates');
+
+fs.readdirSync(PARTIAL_DIR).forEach((file) => {
   if (file.endsWith('.html')) {
     const PARTIAL_NAME = path.basename(file, '.html'); 
-    const CONTENT = fs.readFileSync(path.join(path.join(__dirname, 'templates'), file), 'utf-8');
+    const CONTENT = fs.readFileSync(path.join(PARTIAL_DIR, file), 'utf-8');
     handlebars.registerPartial(PARTIAL_NAME, CONTENT);
   }
 });
@@ -66,5 +71,7 @@ async function fetchFromCMS() {
   fs.mkdirSync('dist', { recursive: true });
   fs.writeFileSync('dist/index.html', RESULT, 'utf-8');
 
-  console.log(`✅ Build complete. Environment: ${ENVIRONMENT}`);
+  if (fs.existsSync(ASSETS_SRC)) {
+    fs.cpSync(ASSETS_SRC, ASSETS_DEST, { recursive: true });
+  }
 })();
