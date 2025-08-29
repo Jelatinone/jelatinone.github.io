@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Control Systems Fan.",
     "From Concept to Code.",
     "Passionate About Automation.",
-    "Velocity: Comfort: Design.",
+    "Velocity: Design: Comfort.",
     "Engineering Solutions.",
     "Shaping Ideas Into Reality.",
     "Tinkerer & Maker.",
